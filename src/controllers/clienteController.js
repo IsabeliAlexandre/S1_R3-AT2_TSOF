@@ -1,5 +1,7 @@
 import { Cliente } from "../models/Cliente.js";
 import clienteRepository from "../repositories/clienteRepository.js";
+import { consultarCep } from "../test/utils/consultarCep.js";
+import { limparNumero } from "../test/utils/limparNumero.js";
 
 const clienteController = {
     criar: async (req, res) => {
